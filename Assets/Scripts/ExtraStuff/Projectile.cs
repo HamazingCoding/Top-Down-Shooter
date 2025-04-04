@@ -14,7 +14,7 @@ namespace BarthaSzabolcs.TutorialOnly
         #endregion
         #region Private Fields
 
-        private bool destoryed = false;
+        private bool destroyed = false;
 
         #endregion
 
@@ -34,7 +34,7 @@ namespace BarthaSzabolcs.TutorialOnly
 
         private void OnCollisionEnter(Collision col)
         {
-            if (destoryed == false)
+            if (destroyed == false)
             {
                 Instantiate(explosionEffect, transform.position, Quaternion.identity);
                 Destroy(gameObject);
